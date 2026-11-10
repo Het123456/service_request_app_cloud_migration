@@ -1,0 +1,8 @@
+.git
+.env
+*.pem
+results/
+docs/
+__pycache__/
+.DS_Store
+CLAUDE.md

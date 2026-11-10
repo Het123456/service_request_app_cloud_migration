@@ -1,0 +1,4 @@
+label,url,runs,median_ms,p95_ms,mean_ms,min_ms,max_ms,timestamp
+stage1_local,http://localhost:8000/,100,1.422,1.697,1.487,1.321,5.27,2026-11-09 13:53:31
+stage1_local,http://localhost:8000/,100,1.447,1.669,1.493,1.342,3.574,2026-11-09 13:53:39
+stage1_local,http://localhost:8000/,100,1.452,1.689,1.481,1.339,2.343,2026-11-09 13:53:50

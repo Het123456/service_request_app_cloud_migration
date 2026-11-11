@@ -1,0 +1,4 @@
+label,url,runs,median_ms,p95_ms,mean_ms,min_ms,max_ms,timestamp
+stage2_ec2,http://localhost:8000/,100,7.911,10.128,8.143,5.767,17.406,2026-11-11 15:42:36
+stage2_ec2,http://localhost:8000/,100,7.159,9.911,7.417,5.657,10.861,2026-11-11 15:42:40
+stage2_ec2,http://localhost:8000/,100,6.023,8.081,6.432,5.549,8.756,2026-11-11 15:42:43

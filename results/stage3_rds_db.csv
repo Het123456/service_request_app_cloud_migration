@@ -1,0 +1,25 @@
+label,operation,runs,median_ms,p95_ms,mean_ms,min_ms,max_ms,db_host,timestamp
+stage3_rds,INSERT,500,5.342,7.537,5.689,4.82,17.035,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:06
+stage3_rds,SELECT_LIST,500,2.066,2.867,2.245,1.904,21.494,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:06
+stage3_rds,SELECT_BY_ID,500,1.289,1.655,2.116,1.154,375.714,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:06
+stage3_rds,UPDATE,500,5.226,7.27,4.269,1.016,21.344,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:06
+stage3_rds,INSERT,500,5.178,7.119,5.45,3.875,16.219,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:13
+stage3_rds,SELECT_LIST,500,1.961,2.085,2.02,1.825,11.11,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:13
+stage3_rds,SELECT_BY_ID,500,1.192,1.307,1.217,1.089,5.613,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:13
+stage3_rds,UPDATE,500,5.086,6.337,4.112,0.957,16.167,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:13
+stage3_rds,INSERT,500,5.237,7.181,5.559,4.805,17.161,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:20
+stage3_rds,SELECT_LIST,500,2.019,2.187,2.054,1.867,7.492,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:20
+stage3_rds,SELECT_BY_ID,500,1.263,1.376,1.271,1.132,3.747,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:20
+stage3_rds,UPDATE,500,5.108,6.136,3.855,1.006,10.853,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:52:20
+stage3_rds,INSERT,500,5.167,7.1,5.516,3.887,25.874,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:10
+stage3_rds,SELECT_LIST,500,1.947,2.082,1.96,1.8,3.262,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:10
+stage3_rds,SELECT_BY_ID,500,1.189,1.3,1.197,1.076,1.948,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:10
+stage3_rds,UPDATE,500,5.091,6.129,4.078,0.943,12.101,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:10
+stage3_rds,INSERT,500,5.171,7.185,5.483,4.468,17.558,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:17
+stage3_rds,SELECT_LIST,500,1.977,2.107,1.987,1.824,2.598,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:17
+stage3_rds,SELECT_BY_ID,500,1.207,1.317,1.22,1.089,2.278,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:17
+stage3_rds,UPDATE,500,5.071,6.15,3.964,0.966,13.257,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:17
+stage3_rds,INSERT,500,5.161,7.053,5.376,4.716,10.893,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:23
+stage3_rds,SELECT_LIST,500,1.941,2.048,1.945,1.793,2.216,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:23
+stage3_rds,SELECT_BY_ID,500,1.183,1.297,1.189,1.079,1.571,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:23
+stage3_rds,UPDATE,500,5.078,5.958,4.007,0.95,12.853,srm-rds.cboqwgso4bkm.ap-south-1.rds.amazonaws.com,2026-11-11 16:53:23

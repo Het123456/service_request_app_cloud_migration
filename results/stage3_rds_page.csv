@@ -1,0 +1,4 @@
+label,url,runs,median_ms,p95_ms,mean_ms,min_ms,max_ms,timestamp
+stage3_rds,http://localhost:8000/,100,11.592,13.393,11.909,10.988,24.145,2026-11-11 16:55:23
+stage3_rds,http://localhost:8000/,100,11.584,35.443,15.563,10.754,70.011,2026-11-11 16:55:25
+stage3_rds,http://localhost:8000/,100,11.538,13.357,11.818,10.892,19.413,2026-11-11 16:55:27

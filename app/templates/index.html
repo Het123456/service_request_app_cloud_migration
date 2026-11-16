@@ -31,9 +31,27 @@
     </div>
   </div>
 
-  <div class="card">
+  
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="h5">Search Request by ID</h2>
+    <form method="get" action="/" class="row g-2">
+      <div class="col-md-8">
+        <input name="search_id" type="number" min="1"
+               class="form-control" placeholder="Enter Request ID" required>
+      </div>
+      <div class="col-md-2 d-grid">
+        <button class="btn btn-success">Search</button>
+      </div>
+      <div class="col-md-2 d-grid">
+        <a href="/" class="btn btn-secondary">Show All</a>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="card">
     <div class="card-body">
-      <h2 class="h5 card-title">Requests <small class="text-muted">({{ total }} total, latest 50 shown)</small></h2>
+      <h2 class="h5 card-title">Requests <small class="text-muted">({{ total }} total, 50 per page)</small></h2>
       <div class="table-responsive">
         <table class="table table-sm align-middle">
           <thead>
@@ -63,10 +81,40 @@
           {% endfor %}
           </tbody>
         </table>
+
+{% if not request.args.get('search_id') and total_pages > 1 %}
+<div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+  {% if page > 1 %}
+    <a class="btn btn-outline-primary"
+       href="{{ url_for('index', page=page-1) }}">Previous</a>
+  {% endif %}
+
+  <span>Page {{ page }} of {{ total_pages }}</span>
+
+  {% if page < total_pages %}
+    <a class="btn btn-primary"
+       href="{{ url_for('index', page=page+1) }}">Next</a>
+  {% endif %}
+</div>
+{% endif %}
+
       </div>
     </div>
   </div>
 
 </div>
+
+{% if timing or request.args.get('timing') %}
+<div id="query-toast" class="alert alert-success shadow"
+     style="position:fixed;top:20px;right:20px;z-index:9999;">
+  &#10003; {{ timing or request.args.get('timing') }}
+</div>
+<script>
+setTimeout(function () {
+  document.getElementById('query-toast')?.remove();
+}, 3000);
+</script>
+{% endif %}
+
 </body>
 </html>

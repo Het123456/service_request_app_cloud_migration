@@ -26,17 +26,17 @@ SUMMARY_DIR = RESULTS_DIR / "summary_tables"
 
 STAGE_FILES = {
     "stage1_local": {
-        "label": "Stage 1 – Local",
+        "label": "Stage 1: Local",
         "database": "stage1_local_db.csv",
         "page": "stage1_local_page.csv",
     },
     "stage2_ec2": {
-        "label": "Stage 2 – EC2 + MySQL",
+        "label": "Stage 2: EC2 + MySQL",
         "database": "stage2_ec2_db.csv",
         "page": "stage2_ec2_page.csv",
     },
     "stage3_rds": {
-        "label": "Stage 3 – EC2 + RDS",
+        "label": "Stage 3: EC2 + RDS",
         "database": "stage3_rds_db.csv",
         "page": "stage3_rds_page.csv",
     },
@@ -175,7 +175,7 @@ def plot_database_metric(summary: pd.DataFrame, metric: str, output_name: str) -
     axis.set_xticks(x_positions, OPERATION_ORDER)
     axis.set_ylabel("Response time (ms)")
     axis.set_xlabel("Database operation")
-    axis.set_title(f"Database {metric.replace('_', ' ')} by operation and stage")
+    axis.set_title(f"Database {'median' if metric == 'median_ms' else 'P95'} time by operation and stage")
     axis.grid(True, axis="y", alpha=0.3)
     axis.legend()
     figure.tight_layout()
@@ -192,13 +192,13 @@ def plot_page_results(summary: pd.DataFrame) -> None:
         [position - width / 2 for position in x_positions],
         summary["median_ms"],
         width,
-        label="Median across recorded run medians",
+        label="Median",
     )
     axis.bar(
         [position + width / 2 for position in x_positions],
         summary["p95_ms"],
         width,
-        label="Median across recorded run p95 values",
+        label="P95",
     )
 
     axis.set_xticks(
@@ -208,7 +208,7 @@ def plot_page_results(summary: pd.DataFrame) -> None:
         ha="right",
     )
     axis.set_ylabel("Page response time (ms)")
-    axis.set_title("Main page response time by migration stage")
+    axis.set_title("Main page response time by stage")
     axis.grid(True, axis="y", alpha=0.3)
     axis.legend()
     figure.tight_layout()
@@ -313,7 +313,7 @@ def plot_locust_results(summary: pd.DataFrame) -> None:
             stage_data["median_ms"],
             marker="o",
             linewidth=2,
-            label=f"{stage_label} – median",
+            label=f"{stage_label} (median)",
         )
         axis.plot(
             stage_data["users"],
@@ -321,12 +321,12 @@ def plot_locust_results(summary: pd.DataFrame) -> None:
             marker="s",
             linestyle="--",
             linewidth=2,
-            label=f"{stage_label} – p95",
+            label=f"{stage_label} (P95)",
         )
 
     axis.set_xlabel("Concurrent Locust users")
     axis.set_ylabel("Response time (ms)")
-    axis.set_title("Load-test response time versus concurrent users")
+    axis.set_title("Load test response time by number of users")
     axis.grid(True, alpha=0.3)
     axis.legend()
     figure.tight_layout()

@@ -1,0 +1,13 @@
+stage,operation,median_ms,p95_ms,recorded_batches,timed_operations_per_batch,stage_label
+stage1_local,INSERT,0.552,0.977,3,500.0,Stage 1: Local
+stage2_ec2,INSERT,6.277,8.236,3,500.0,Stage 2: EC2 + MySQL
+stage3_rds,INSERT,5.1745,7.15,6,500.0,Stage 3: EC2 + RDS
+stage1_local,SELECT_LIST,0.253,0.27,3,500.0,Stage 1: Local
+stage2_ec2,SELECT_LIST,1.228,1.524,3,500.0,Stage 2: EC2 + MySQL
+stage3_rds,SELECT_LIST,1.969,2.096,6,500.0,Stage 3: EC2 + RDS
+stage1_local,SELECT_BY_ID,0.065,0.08,3,500.0,Stage 1: Local
+stage2_ec2,SELECT_BY_ID,0.463,0.577,3,500.0,Stage 2: EC2 + MySQL
+stage3_rds,SELECT_BY_ID,1.1995,1.3119999999999998,6,500.0,Stage 3: EC2 + RDS
+stage1_local,UPDATE,0.502,0.996,3,500.0,Stage 1: Local
+stage2_ec2,UPDATE,6.498,8.421,3,500.0,Stage 2: EC2 + MySQL
+stage3_rds,UPDATE,5.0885,6.143000000000001,6,500.0,Stage 3: EC2 + RDS

@@ -1,0 +1,7 @@
+stage,users,median_ms,p95_ms,requests,failures,failure_pct,recorded_repetitions
+stage2_ec2,1,10.0,43.0,59.0,0.0,0.0,3
+stage2_ec2,10,10.0,28.0,592.0,0.0,0.0,3
+stage2_ec2,50,11.0,39.0,2880.0,0.0,0.0,3
+stage3_rds,1,14.0,22.0,61.0,0.0,0.0,3
+stage3_rds,10,14.0,51.0,595.0,0.0,0.0,3
+stage3_rds,50,18.0,88.0,2847.0,0.0,0.0,3

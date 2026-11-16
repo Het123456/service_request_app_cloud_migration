@@ -1,0 +1,4 @@
+stage,median_ms,p95_ms,recorded_batches,requests_per_batch,stage_label
+stage1_local,1.447,1.689,3,100.0,Stage 1: Local
+stage2_ec2,7.159,9.911,3,100.0,Stage 2: EC2 + MySQL
+stage3_rds,11.584,13.393,3,100.0,Stage 3: EC2 + RDS
